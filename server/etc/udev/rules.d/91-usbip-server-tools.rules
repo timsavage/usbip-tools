@@ -1,0 +1,11 @@
+# Installed by usbip-server-tools
+# 
+# These rules identify certain USB devices and export them via usbipd
+#
+# See https://hackaday.io/project/20036-remote-avr-ispbus-pirate
+
+# Auto bind the Bus Pirate (well any product that includes an FTDI interface).
+SUBSYSTEM=="usb" ATTRS{idVendor}=="0403" ATTRS{idProduct}=="6001" RUN+="/usr/bin/usbip bind -b $kernel"
+
+# Auto bind a USBTiny ISP
+SUBSYSTEM=="usb" ATTRS{idVendor}=="1781" ATTRS{idProduct}=="0c9f" RUN+="/usr/bin/usbip bind -b $kernel"
