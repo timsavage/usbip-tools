@@ -1,5 +1,5 @@
 # Modules required by usbip-client-tools
 # See: https://hackaday.io/project/20036-remote-avr-ispbus-pirate
 
-# VHCI-hcd module loaded
+# vhci-hcd (Virtual Host Controller Interface) module loaded
 vhci-hcd

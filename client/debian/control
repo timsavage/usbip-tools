@@ -1,0 +1,20 @@
+Source: usbip-client-tools
+Section: utils
+Priority: optional
+Maintainer: Tim Savage <tim@savage.company>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/timsavage/usbip-tools
+Vcs-Git: git://github.com/timsavage/usbip-tools.git
+Vcs-Browser: https://github.com/timsavage/usbip-tools
+
+Package: usbip-client-tools
+Architecture: all
+Depends: linux-tools-generic
+Conflicts: usbip
+Description: Simplify the management of remote mounted USB devices.
+ Tools that simplify the management of USB devices shared via the usbip
+ Linux kernel tools.
+ .
+ This package goes along with the usbip-server-tools.
+

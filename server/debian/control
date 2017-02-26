@@ -1,0 +1,20 @@
+Source: usbip-server-tools
+Section: utils
+Priority: optional
+Maintainer: Tim Savage <tim@savage.company>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/timsavage/usbip-tools
+Vcs-Git: git://github.com/timsavage/usbip-tools.git
+Vcs-Browser: https://github.com/timsavage/usbip-tools
+
+Package: usbip-server-tools
+Architecture: all
+Depends: linux-tools-generic
+Conflicts: usbip
+Description: Simplify the export of USB devices.
+ Tools that simplify the export of USB devices shared via the usbip
+ Linux kernel tools.
+ .
+ This package goes along with the usbip-client-tools.
+
